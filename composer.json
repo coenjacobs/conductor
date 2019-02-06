@@ -1,0 +1,23 @@
+{
+    "name": "coenjacobs/conductor",
+    "description": "Enforces your WordPress plugin requirements",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Coen Jacobs",
+            "email": "coenjacobs@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "classmap": [ "classes" ],
+        "psr-4": {
+            "CoenJacobs\\Conductor\\": "src"
+        }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.4"
+    }
+}

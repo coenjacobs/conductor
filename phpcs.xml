@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ruleset name="Conductor coding standards">
+    <rule ref="PSR2"/>
+    <exclude-pattern>vendor/*</exclude-pattern>
+
+    <!-- Allow global namespace classes in classes directory (for legacy purposes) -->
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <exclude-pattern>*/classes/*</exclude-pattern>
+    </rule>
+</ruleset>
