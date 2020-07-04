@@ -2,9 +2,21 @@
 
 namespace CoenJacobs\Conductor;
 
+/**
+ * Class FileReader
+ *
+ * @package CoenJacobs\Conductor
+ */
 class FileReader
 {
-    public function getPluginVersion($slug)
+	/**
+	 * Get the current version of an installed plugin.
+	 *
+	 * @param string $slug
+	 *
+	 * @return false|string
+	 */
+	public function getPluginVersion($slug)
     {
 	    // Stripped down list of headers.
 	    $default_headers = [
